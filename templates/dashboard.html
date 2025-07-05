@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style_dashboard.css')}}">
+
+</head>
+<body>
+<nav>
+    <a href="/">Home</a>
+    <a href="/logout">Logout</a>
+</nav>
+
+<h1>Welcome, {{ username }}!</h1>
+<p1>This is your dashboard.</p1>
+<h2>Contact Messages</h2>
+
+{% if messages %}
+    <table border="1" style="margin:auto;">
+        <tr><th>Name</th><th>Email</th><th>Message</th></tr>
+        {% for m in messages %}
+        <tr>
+            <td>{{ m[0] }}</td>
+            <td>{{ m[1] }}</td>
+            <td>{{ m[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% else %}
+    <p>No messages found.</p>
+{% endif %}
+ <br>
+<p><a href="/upload">Upload Image / Resume</a></p> <br>
+
+{% if file_url %}
+    <h3>Uploaded File:</h3>
+    {% if file_url.endswith(('.png', '.jpg', '.jpeg', '.gif')) %}
+        <img src="{{ url_for('static', filename=file_url.split('static/')[-1]) }}" width="200">
+    {% else %}
+        <a1 href="{{ url_for('static', filename=file_url.split('static/')[-1]) }}" target="_blank">Download File</a1>
+    {% endif %}
+{% endif %}
+<p>
+    <a href="/upload">Upload File</a>
+    <a href="/export/csv">Download Messages (CSV)</a>
+    <a href="/export/pdf">Download Messages (PDF)</a>
+
+</p>
+
+
+
+
+
+</body>
+</html>

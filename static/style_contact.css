@@ -1,0 +1,139 @@
+
+body{
+    background-image: url(midnight.jpg);
+   /* background-color: rgb(94, 83, 83);*/
+    text-align: center;
+}
+
+nav {
+   /* background-color: #333;*/
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 30px;
+    background-color: rgb(94, 83, 83);
+    color: white;
+    border: none;
+    padding: 10px;
+    outline: none;
+    font-size: 100%;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+nav a:hover {
+     color: #00ffff;
+     scale: 1.1;
+    /*color: rgb(156, 151, 143);*/
+    border: 2px solid rgb(156, 151, 143);
+    background-color: transparent;
+    font-weight: 700;
+    box-shadow: 0 0 40px rgb(156, 151, 143);
+}
+
+
+h1{
+   /* background-color: #333;*/
+    padding: 10px;
+    text-align: center;
+
+    font-size: 2.5rem;
+    color: #bcb4ad;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+p{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #bcb4ad;
+
+}
+
+form{
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+
+   border-radius: 15px;
+   margin: 40px auto;
+   width: 90%;
+   max-width: 800px;
+   /* background-color: transparent;*/
+  /*  border: 0.2rem solid rgb(109,67,0);*/
+   /* color: rgb(109,67,0);*/
+    font-size: 1.5rem;
+    transition: 0.2s linear;
+
+   /* width: 750px;*/
+    background: rgba(255, 255, 255, .1);
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(50px);
+   /* border-radius: 10px;*/
+    color: #160404;
+   /* padding: 40px 35px 55px ;*/
+   /* margin: 0 10px;*/
+}
+
+form .input{
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+textarea{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+}
+
+input:focus,
+textarea:focus{
+    border-color: rgb(109,67,0);
+    resize: vertical;
+}
+
+button{
+     width: 40%;
+    height: 6vh;
+    margin: 30px;
+    background-color: rgb(94, 83, 83);
+    color: white;
+    border: none;
+    padding: 10px;
+    outline: none;
+    font-size: 100%;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s linear;
+
+}
+
+button:hover{
+    color: #00ffff;
+    scale: 1.1;
+    border: 2px solid rgb(156, 151, 143);
+    background-color: transparent;
+    font-weight: 700;
+    box-shadow: 0 0 40px rgb(156, 151, 143);
+
+}

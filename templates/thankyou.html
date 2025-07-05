@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style_home.css')}}">
+</head>
+<body>
+<nav>
+    <a href="/">Home</a> |
+    <a href="/about">About</a> |
+    <a href="/contact">Contact</a>
+</nav>
+
+<h1>Thank You!</h1>
+<p>Dear {{ name }}, your message has been received. We'll get back to you soon!</p>
+
+</body>
+</html>
